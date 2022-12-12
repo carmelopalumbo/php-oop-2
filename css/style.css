@@ -1,3 +1,7 @@
+body{
+    background-color: #161616;
+}
+
 .type-icon{
     width: 100px;
     height: 100px;
@@ -6,12 +10,27 @@
     margin: 8px auto;
 }
 
+.prod-image{
+    height: 223px;
+    object-fit: cover;
+}
+
 h1{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding-bottom: 20px;
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+.card{
+    box-shadow: 6px -4px 13px -3px #FFFFFF;
 }
 
 footer{
     padding-top: 20px;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
+    color: white;
 }
