@@ -7,7 +7,7 @@ class Product
     public $brand;
     public $price;
     public $inStore;
-    public $image;
+    protected $image;
 
     /**
      * @var Number $id
@@ -29,5 +29,10 @@ class Product
     public function setImg($_image)
     {
         $this->image = $_image;
+    }
+
+    public function getImg()
+    {
+        return $this->image;
     }
 }

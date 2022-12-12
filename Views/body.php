@@ -11,7 +11,7 @@
                 <?php foreach ($food_stock as $food) : ?>
                     <div class="col-4 my-4">
                         <div class="card m-auto" style="width: 18rem;">
-                            <img src="<?php echo $food->image ?>" class="card-img-top prod-image" alt="<?php echo $food->name ?>">
+                            <img src="<?php echo $food->getImg() ?>" class="card-img-top prod-image" alt="<?php echo $food->name ?>">
                             <div class="card-body text-center">
                                 <img src="<?php echo $food->category->icon ?>" alt="" class="type-icon">
                                 <h5 class="card-title py-2"><?php echo $food->name ?></h5>
@@ -33,7 +33,7 @@
                 <?php foreach ($accessory_stock as $accessory) : ?>
                     <div class="col-4 my-4">
                         <div class="card m-auto" style="width: 18rem;">
-                            <img src="<?php echo $accessory->image ?>" class="card-img-top prod-image" alt="<?php echo $accessory->name ?>">
+                            <img src="<?php echo $accessory->getImg() ?>" class="card-img-top prod-image" alt="<?php echo $accessory->name ?>">
                             <div class="card-body text-center">
                                 <img src="<?php echo $accessory->category->icon ?>" alt="" class="type-icon">
                                 <h5 class="card-title py-2"><?php echo $accessory->name ?></h5>
@@ -53,7 +53,7 @@
                 <?php foreach ($toys_stock as $toy) : ?>
                     <div class="col-4 my-4">
                         <div class="card m-auto" style="width: 18rem;">
-                            <img src="<?php echo $toy->image ?>" class="card-img-top prod-image" alt="<?php echo $toy->name ?>">
+                            <img src="<?php echo $toy->getImg() ?>" class="card-img-top prod-image" alt="<?php echo $toy->name ?>">
                             <div class="card-body text-center">
                                 <h5 class="card-title py-2"><?php echo $toy->name ?></h5>
                                 <p class="card-text"><strong>Produttore: </strong><?php echo $toy->brand ?> </p>
