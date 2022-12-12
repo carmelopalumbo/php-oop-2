@@ -23,5 +23,11 @@ class Product
         $this->brand = $_brand;
         $this->price = $_price;
         $this->inStore = $_inStore;
+        $this->image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png';
+    }
+
+    public function setImg($_image)
+    {
+        $this->image = $_image;
     }
 }
